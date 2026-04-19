@@ -111,15 +111,15 @@ require("lazy").setup({
   end,
 },
 
--- LSP
+-- LSP 
 {
   "neovim/nvim-lspconfig",
   config = function()
-    local lspconfig = require("lspconfig")
-
-    lspconfig.clangd.setup({
+    vim.lsp.config("clangd", {
       cmd = { "clangd", "--background-index" },
     })
+
+    vim.lsp.enable("clangd")
 
     vim.keymap.set("n", "gd", vim.lsp.buf.definition)
     vim.keymap.set("n", "K", vim.lsp.buf.hover)
@@ -166,11 +166,12 @@ require("lazy").setup({
   end,
 },
 
--- BUFFERLINE
+-- BUFFERLINE 
 {
   "akinsho/bufferline.nvim",
   version = "*",
   dependencies = "nvim-tree/nvim-web-devicons",
+ 
   config = function()
     require("bufferline").setup({
       options = {
@@ -179,7 +180,6 @@ require("lazy").setup({
         separator_style = "padded_slant",
         show_close_icon = false,
       },
-      highlights = require("tokyonight.groups.bufferline").get(),
     })
 
     vim.keymap.set("n", "<Tab>", ":BufferLineCycleNext<CR>")
