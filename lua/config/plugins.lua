@@ -26,6 +26,11 @@ vim.pack.add({
 
 	{ src = "https://github.com/goolord/alpha-nvim" },
 
+	{ src = "https://github.com/shortcuts/no-neck-pain.nvim" },
+
+	{ src = "https://github.com/nvim-lua/plenary.nvim" },
+	{ src = "https://github.com/epwalsh/obsidian.nvim" },
+
 	-- line style:
 	{ src = "https://github.com/nvim-lualine/lualine.nvim" },
 	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
@@ -50,7 +55,7 @@ vim.pack.add({
 
 	{ src = "https://github.com/zaldih/themery.nvim" },
 
-    { src = "https://github.com/windwp/nvim-autopairs" },
+	{ src = "https://github.com/windwp/nvim-autopairs" },
 
 	-- git
 	{ src = "https://github.com/lewis6991/gitsigns.nvim" },
