@@ -50,6 +50,8 @@ vim.pack.add({
 
 	{ src = "https://github.com/zaldih/themery.nvim" },
 
+    { src = "https://github.com/windwp/nvim-autopairs" },
+
 	-- git
 	{ src = "https://github.com/lewis6991/gitsigns.nvim" },
 

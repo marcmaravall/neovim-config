@@ -19,3 +19,4 @@ require("config.keymaps")
 require("config.theme")
 
 require("config.alpha")
+require("config.autopairs")
